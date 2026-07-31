@@ -1,0 +1,23 @@
+Task 1, you need to create a Bash shell script that displays the company welcome screen along with the current system information.
+
+Step 1: Create the script
+cd ~/Linux_Practices
+touch task1.sh
+nano task1.sh
+
+Step 2: Write the following script in task1.sh
+#!/bin/bash
+
+echo "============================================"
+echo ""
+echo "        TechNova Solutions"
+echo ""
+echo "        Linux Server Setup"
+echo ""
+echo "============================================"
+echo "Current Date : $(date +%d-%m-%Y)"
+echo "Current Time : $(date +%H:%M:%S)"
+echo "Hostname     : $(hostname)"
+echo "Current User : $(whoami)"
+echo "IP Address   : $(hostname -I | awk '{print $1}')"
+echo "============================================"
