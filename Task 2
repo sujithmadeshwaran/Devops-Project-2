@@ -1,0 +1,39 @@
+Task 2, create a Bash script that asks the user to enter employee details and then displays them.
+
+Step 1: Create the script
+touch task2.sh
+nano task2.sh
+
+Step 2: Write the following script
+#!/bin/bash
+
+echo "============================================"
+echo "      TechNova Solutions"
+echo "     Employee Registration"
+echo "============================================"
+
+echo "Enter Employee Name:"
+read name
+
+echo "Enter Employee ID:"
+read id
+
+echo "Enter Department:"
+read department
+
+echo "Enter Email:"
+read email
+
+echo "Enter Assigned Project:"
+read project
+
+echo ""
+echo "============================================"
+echo "   Registration Successful"
+echo "============================================"
+echo "Employee Name    : $name"
+echo "Employee ID      : $id"
+echo "Department       : $department"
+echo "Email            : $email"
+echo "Assigned Project : $project"
+echo "============================================"
