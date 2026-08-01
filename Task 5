@@ -1,0 +1,29 @@
+Task 5 – Create Company Folder Structure
+Automatically create
+
+mkdir -p TechNova_Server
+
+mkdir -p TechNova_Server/Employees
+
+mkdir -p TechNova_Server/Projects/ShopSphere
+mkdir -p TechNova_Server/Projects/HealthTrack
+mkdir -p TechNova_Server/Projects/EduPortal
+
+mkdir -p TechNova_Server/SourceCode
+
+mkdir -p TechNova_Server/Reports
+
+mkdir -p TechNova_Server/Logs
+touch TechNova_Server/Logs/access.log
+touch TechNova_Server/Logs/error.log
+touch TechNova_Server/Logs/server.log
+
+mkdir -p TechNova_Server/Backup
+
+mkdir -p TechNova_Server/Scripts
+
+echo "Company Folder Structure Created Successfully."
+
+output:
+bash task5.sh
+Company Folder Structure Created Successfully.
