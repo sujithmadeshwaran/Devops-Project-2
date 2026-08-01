@@ -1,0 +1,15 @@
+Task 3 – Department Verification
+
+echo "your Department"
+read department
+if [ "$department" = "DevOps" ]
+then
+   echo "Administrator Access Granted"
+else
+   echo "Standard Developer Access Granted"
+fi
+
+output:
+your Department
+DevOps
+Administrator Access Granted
