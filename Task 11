@@ -1,0 +1,24 @@
+Task 11 – Project Workspace Generator
+
+echo "How many modules do you want to create?"
+read modules
+
+for ((i=1; i<=modules; i++))
+do
+    mkdir -p Module$i
+    touch Module$i/README.md
+    touch Module$i/notes.txt
+    touch Module$i/config.conf
+done
+
+echo "============================================"
+echo "Project Workspace Created Successfully"
+echo "============================================"
+
+output:
+bash task11.sh
+How many modules do you want to create?
+4
+============================================
+Project Workspace Created Successfully
+============================================
