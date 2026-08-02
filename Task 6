@@ -1,0 +1,18 @@
+Task 6 – Folder Validation
+
+echo "Enter Workspace Name:"
+read workspace
+
+if [ -d "$workspace" ]
+then
+    echo "Workspace Already Exists"
+else
+    mkdir "$workspace"
+    echo "Workspace Created Successfully"
+fi
+
+output:
+bash task6.sh
+Enter Workspace Name:
+Workspace
+Workspace Created Successfully
