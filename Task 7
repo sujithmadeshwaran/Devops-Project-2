@@ -1,0 +1,18 @@
+Task 7 – File Validation
+
+echo "Enter Configuration File Name:"
+read filename
+
+if [ -f "$filename" ]
+then
+    echo "Configuration File Found"
+else
+    touch "$filename"
+    echo "New Configuration File Created"
+fi
+
+output:
+bash task7.sh
+Enter Configuration File Name:
+config.txt
+New Configuration File Created
