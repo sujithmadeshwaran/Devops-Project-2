@@ -1,0 +1,50 @@
+Task 9 – System Health Report
+
+mkdir -p Reports
+echo "Username          : $(whoami)"
+echo "Current Directory : $(pwd)"
+echo "Memory Usage:"
+free -h
+echo ""
+echo "Disk Usage:"
+df -h
+echo ""
+echo "Running Processes:"
+ps -e
+
+echo "============================================"
+
+{
+echo "============================================"
+echo "      System Health Report"
+echo "============================================"
+echo "Username          : $(whoami)"
+echo "Current Directory : $(pwd)"
+echo ""
+echo "Memory Usage:"
+free -h
+echo ""
+echo "Disk Usage:"
+df -h
+echo ""
+echo "Running Processes:"
+ps -e
+echo "============================================"
+} > Reports/system_health.txt
+
+echo "System health report saved in Reports/system_health.txt"
+
+output:
+ bash task9.sh
+Username          : sujith
+Current Directory : /mnt/c/Users/sujit/linux_Practice
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           3.7Gi       512Mi       3.0Gi       4.0Mi       271Mi       3.2Gi
+Swap:          1.0Gi          0B       1.0Gi
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/6.18.33.2-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         477G  194G  283G  41% /usr/lib/wsl/drivers
