@@ -1,0 +1,35 @@
+Task 8 – Network Health Check
+
+mkdir -p Reports
+echo "Hostname   : $(hostname)"
+echo "IP Address : $(hostname -I | awk '{print $1}')"
+
+echo ""
+echo "Checking Internet Connection..."
+
+if ping -c 1 google.com > /dev/null
+then
+    status="Internet Connection Stable"
+else
+    status="No Internet Connection"
+fi
+
+echo "Internet Status : $status"
+
+echo "============================================"
+
+echo "Hostname : $(hostname)" > Reports/network_status.txt
+echo "IP Address : $(hostname -I | awk '{print $1}')" >> Reports/network_status.txt
+echo "Internet Status : $status" >> Reports/network_status.txt
+
+echo "Network report saved in Reports/network_status.txt"
+
+output:
+bash task8.sh
+Hostname   : SujithVM
+IP Address : 172.31.55.199
+
+Checking Internet Connection...
+Internet Status : Internet Connection Stable
+============================================
+Network report saved in Reports/network_status.txt
