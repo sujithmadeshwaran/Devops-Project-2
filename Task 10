@@ -1,0 +1,12 @@
+Task 10 – Package Verification
+
+if command -v tree > /dev/null
+then
+    echo "Tree Utility Installed"
+else
+    echo "Install Required Package"
+fi
+
+output:
+bash task10.sh
+Install Required Package
