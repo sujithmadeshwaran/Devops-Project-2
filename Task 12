@@ -1,0 +1,14 @@
+Task 12 – Backup
+
+backup_folder="Backup_$(date +%Y%m%d)"
+
+mkdir -p "$backup_folder"
+
+cp -r Projects "$backup_folder"
+
+echo "Backup Completed Successfully"
+
+output:
+bash task12.sh
+cp: cannot stat 'Projects': No such file or directory
+Backup Completed Successfully
