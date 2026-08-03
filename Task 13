@@ -1,0 +1,59 @@
+Task 13 – Final Summary
+
+echo "==================================="
+echo "   Server Configuration Completed"
+echo "==================================="
+
+echo "Enter Employee Name:"
+read employee
+
+echo "Enter Department:"
+read department
+
+echo "Enter Assigned Project:"
+read project
+
+if ping -c 1 google.com > /dev/null 2>&1
+then
+    internet="Internet Connection Stable"
+else
+    internet="No Internet Connection"
+fi
+
+if [ -d Backup_* ] 2>/dev/null
+then
+    backup="Backup Completed Successfully"
+else
+    backup="Backup Not Found"
+fi
+
+echo ""
+echo "Employee          : $employee"
+echo "Department        : $department"
+echo "Assigned Project  : $project"
+echo "Internet Status   : $internet"
+echo "Backup Status     : $backup"
+echo "Date              : $(date +%d-%m-%Y)"
+echo "Time              : $(date +%H:%M:%S)"
+echo "==================================="
+
+output:
+ bash task13.sh
+===================================
+   Server Configuration Completed
+===================================
+Enter Employee Name:
+sujith
+Enter Department:
+devops
+Enter Assigned Project:
+shell
+
+Employee          : sujith
+Department        : devops
+Assigned Project  : shell
+Internet Status   : Internet Connection Stable
+Backup Status     : Backup Completed Successfully
+Date              : 03-08-2026
+Time              : 09:30:57
+===================================
